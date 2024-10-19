@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio / Diarassouba Mahamadou</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* En-tête et menu */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347; /* Change la couleur au survol */
+            transform: scale(1.1); /* Agrandit légèrement l'élément au survol */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* Sections des compétences */
+        .competence-section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            color: #fff;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .competence-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .competence-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #f9f9f9;
+        }
+
+        /* Différentes couleurs pour chaque section */
+        .competence1 { background-color: #8e44ad; }
+        .competence2 { background-color: #16a085; }
+        .competence3 { background-color: #c0392b; }
+        .competence4 { background-color: #2980b9; }
+        .competence5 { background-color: #f39c12; }
+        .competence6 { background-color: #27ae60; }
+        .competence7 { background-color: #2c3e50; }
+
+        .competence-section:hover {
+            transform: scale(1.05);
+            background-color: #34495e;
+        }
+
+        /* Projets */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 15px;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .projet1 { background-color: #3498db; }
+        .projet2 { background-color: #e74c3c; }
+        .projet3 { background-color: #2ecc71; }
+        .projet4 { background-color: #f1c40f; }
+
+        li:hover {
+            transform: scale(1.05);
+            background-color: #34495e;
+        }
+
+        /* Formulaire de contact */
+        #contactForm {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contactForm input, #contactForm textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #contactForm input:hover, #contactForm textarea:hover {
+            border-color: #333;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #contactForm button {
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        #contactForm button:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <div style="text-align: center;">
+            <img src="C:\Users\MENA\Desktop\Mon portfolio\photo-profil.jpg" alt="description de l'image" style="width:150px; height:150;border-radius: 50%">
+            <h1>Mahamadou Diarassouba (Ingénieur technopédagogue)</h1>
+        </div>
+        <p>Découvrez à travers ce site mon travail et mes offres de compétences.</p>
+        <p id="date"></p>
+    </section>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p><strong>Mahamadou DIARASSOUBA</strong>, est un éminent Professeur de communication audiovisuelle...</p>
+        <p>Je suis un ingénieur en technologie éducative passionné par la conception pédagogique et les systèmes d'apprentissage à distance.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="competence-section competence1">
+            <div class="competence-title">Digital Marketing</div>
+            <p class="competence-description">Utilisation des outils de marketing numérique...</p>
+        </div>
+        <div class="competence-section competence2">
+            <div class="competence-title">Montage photo et vidéo</div>
+            <p class="competence-description">Maîtrise des logiciels de montage photo et vidéo...</p>
+        </div>
+        <div class="competence-section competence3">
+            <div class="competence-title">Conception Pédagogique et Ingénierie</div>
+            <p class="competence-description">Création de parcours de formation sur mesure...</p>
+        </div>
+        <div class="competence-section competence4">
+            <div class="competence-title">Conception de systèmes d'apprentissage à distance</div>
+            <p class="competence-description">Développement de plateformes d'apprentissage en ligne...</p>
+        </div>
+        <div class="competence-section competence5">
+            <div class="competence-title">Introduction des TIC dans l'Éducation</div>
+            <p class="competence-description">Encadrement et formation des enseignants...</p>
+        </div>
+        <div class="competence-section competence6">
+            <div class="competence-title">Tutorat et accompagnement à distance</div>
+            <p class="competence-description">Fourniture d'un soutien pédagogique et technique...</p>
+        </div>
+        <div class="competence-section competence7">
+            <div class="competence-title">Maintenance informatique</div>
+            <p class="competence-description">Connaissances techniques en maintenance informatique...</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <ul>
+            <li class="projet1">Projet 1 : Conception d'une plateforme d'apprentissage en ligne dénommée e-cafop</li>
+            <li class="projet2">Projet 2 : Intégration des TIC dans la formation au CAFOP</li>
+            <li class="projet3">Projet 3 : Élaboration d'un module de formation à distance sur l'initiation à l'informatique</li>
+            <li class="projet4">Projet 4 : Mise en place d'une plateforme de formation en développement web</li>
+        </ul>
+    </section>
+
+    <section id="exprériencesprofessionnels">
+        <h2>Expériences professionnelles</h2>
+        <ul>
+            <li>Responsable informatique du Cafop de Korhogo (Depuis janvier 2024)</li>
+            <li>Formateur-encadrant des enseignants du primaire (Depuis juillet 2022)</li>
+            <li>Tuteur/formateur en genre (égalité femme-homme dans l'éducation) (Depuis juillet 2022)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</
